@@ -56,6 +56,6 @@ class PagesController < ApplicationController
 				@councils_empty = Council.includes(:memberships).where(memberships: { id: nil })
 			end
 		end
-		@councils = @councils_ordered
+		@councils = @councils_ordered + @councils_empty
 	end
 end
