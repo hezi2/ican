@@ -89,8 +89,8 @@ class PositionsController < ApplicationController
 	def get_members_by_votes(members)
 		@members_list = []
 		@members_data = []
-		@members = members
-		@members.each do |m|
+		@members2 = members
+		@members2.each do |m|
 			@votes = PosVote.where(position_id: @position.id, vote_id: m.user, deactivate: false, active: true)
 			@voted_members = []
 			@votes.each do |v|
