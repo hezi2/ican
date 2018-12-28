@@ -113,7 +113,7 @@ class PositionsController < ApplicationController
 
 		if @current_incumbent.blank?
 			if @a_members.count > 1
-				if @a_members[0][1] > @a_members[1][1]
+				if @a_members[0][0] > @a_members[1][1]
 					@incumbent = Incumbent.new(user_id: @a_members[0][1].id, position_id: @position.id, active: true, active_at: Time.now )
 					@incumbent.save
 					redirect_to council_position_path(@council, @position)
