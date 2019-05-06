@@ -90,7 +90,6 @@ class PositionsController < ApplicationController
 		@members_list = []
 		@members_data = []
 		@members = members
-		if not 
 		members.each do |m|
 			@votes = PosVote.where(position_id: @position.id, vote_id: m.user, deactivate: false, active: true)
 			@voted_members = []
