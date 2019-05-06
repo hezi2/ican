@@ -30,7 +30,6 @@ gem 'will_paginate', '~> 3.1.0'
 gem "chartkick"
 gem 'chosen-rails'
 gem 'city-state'
-gem 'redis'
 gem 'gon'
 gem 'rabl-rails'
 # Use ActiveModel has_secure_password
