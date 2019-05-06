@@ -122,7 +122,7 @@ class PositionsController < ApplicationController
 		
 		end
 
-		#if @current_leader == @current_incumbent
+		if @current_leader == @current_incumbent
 
 		@current_elected.each do |e|
 			if Time.now - e.elected_at > 30.days
