@@ -5,7 +5,7 @@
 	<div id="row">
 		<% @disply_title = false %>
 		<% @council.positions.each do |p| %>
-			<% @votes = p.pos_votes.where(vote_id: current_user, active: false, deactivate: false) %>
+			<% @votes = p.pos_votes.where(vote_id: current_user, active: false, deactivate: true) %>
 			<% if @votes.count != 0 %>
 				<% @disply_title = true %>
 			<% end %>
@@ -15,7 +15,7 @@
 		<% end %>
 
 		<% @council.positions.each do |p| %>
-			<% @votes = p.pos_votes.where(vote_id: current_user, active: false, deactivate: false) %>
+			<% @votes = p.pos_votes.where(vote_id: current_user, active: false, deactivate: true) %>
 			
 			<% if @votes.count != 0 %>
 				<p><%= p.title %></p>
