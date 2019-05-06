@@ -49,7 +49,7 @@ class PositionsController < ApplicationController
 		if @current_incumbent.present?
 			@incumbent_membership = @council.memberships.where(user_id: @current_incumbent.user.id, active: true, deactivate: false).first
 		else
-			@incumbent_membership = @members[0][0]
+			@incumbent_membership = ""
 		end
 
 		@current_elected = @incumbents_all.where(active:false, elected:true)
