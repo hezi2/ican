@@ -6,4 +6,4 @@ test:
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
+  url: postgres://rwwvbfkltgdlbb:eb2bd3fcacf64ca9fa99fde11df283fa53c2188dc4490c6593e4824bdb1c0837@ec2-54-235-133-42.compute-1.amazonaws.com:5432/dadi7ci0k9ofja
