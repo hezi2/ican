@@ -91,7 +91,7 @@ class PositionsController < ApplicationController
 		@members_data = []
 		@members = a_members
 		a_members.each do |m|
-			@votes = PosVote.where(position_id: @position.id, vote_id: m.user, deactivate: false, active: true)
+			@votes = PosVote.where(position_id: @position.id, vote_id: m.user, deactivate: true, active: false)
 			@voted_members = []
 			@votes.each do |v|
 				@voted_members += [v.user]
