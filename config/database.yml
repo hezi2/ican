@@ -84,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: ican_production
-  username: ican
-  password: <%= ENV['ICAN_DATABASE_PASSWORD'] %>
+  database: d92qkbpruspte9
+  username: cwozaktqroohdp
+  password: dfa2ff475d704f5dbb223170b43a10daf7989164a25f1029e7fb0edcefda7012
